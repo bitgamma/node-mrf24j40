@@ -1,0 +1,37 @@
+{
+  "name": "node-mrf24j40",
+  "version": "0.0.1",
+  "homepage": "https://github.com/briksoftware/node-mrf24j40",
+  "description": "A module simplifying access to the MRF24J40 IEEE 802.15.4 module",
+  "license": "MIT",
+  "author": "Michele Balistreri",
+  "contributors": [
+    "Ksenia Lebedeva"
+  ],
+  "main": "./lib/mrf24j40.js",
+  "scripts": {
+    "test": "mocha -R spec ./test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/briksoftware/node-mrf24j40"
+  },
+  "keywords": [
+    "IEEE 802.15.4",
+    "MRF24J40"
+  ],
+  "bugs": {
+    "url": "https://github.com/briksoftware/node-mrf24j40/issues"
+  },
+  "dependencies": {
+    "gpio": "0.2.x",
+    "spi": "0.1.x"
+  },
+  "devDependencies": {
+    "mocha": "1.18.x",
+    "chai": "1.9.x"
+  },
+  "engines": {
+    "node": ">= 0.10"
+  }
+}
