@@ -24,7 +24,7 @@
     "url": "https://github.com/briksoftware/node-mrf24j40/issues"
   },
   "dependencies": {
-    "gpio": "0.2.x",
+    "onoff": "0.3.x",
     "spi": "0.1.x"
   },
   "devDependencies": {
