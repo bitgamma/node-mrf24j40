@@ -10,6 +10,7 @@
   ],
   "main": "./lib/mrf24j40.js",
   "scripts": {
+    "install": "node ./install_dependencies.js",
     "test": "mocha -R spec ./test/*.js"
   },
   "repository": {
@@ -24,8 +25,7 @@
     "url": "https://github.com/briksoftware/node-mrf24j40/issues"
   },
   "dependencies": {
-    "onoff": "0.3.x",
-    "spi": "0.1.x"
+    "npm": "1.4.x"
   },
   "devDependencies": {
     "mocha": "1.18.x",
