@@ -27,20 +27,19 @@ exports.Hardware.prototype.clearInterrupt = function() {
   this.interrupt = 1;
 }
 
-exports.Hardware.prototype.transfer = function(txBuf, rxBuf, cb) {
-  this.transferCallback(txBuf, rxBuf, cb);
+exports.Hardware.prototype.transfer = function(txBuf, rxBuf) {
+  this.transferCallback(txBuf, rxBuf);
+  return rxBuf;
 }
 
-exports.Hardware.prototype.writeReset = function(value, cb) {
+exports.Hardware.prototype.writeReset = function(value) {
   this.reset = value;
-  cb()
 }
 
-exports.Hardware.prototype.writeWake = function(value, cb) {
+exports.Hardware.prototype.writeWake = function(value) {
   this.wake = value;
-  cb()
 }
 
-exports.Hardware.prototype.readInterrupt = function(cb) {
-  cb(null, this.interrupt)
+exports.Hardware.prototype.readInterrupt = function() {
+  return this.interrupt;
 }
