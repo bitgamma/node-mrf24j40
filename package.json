@@ -1,6 +1,6 @@
 {
   "name": "node-mrf24j40",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/briksoftware/node-mrf24j40",
   "description": "A module simplifying access to the MRF24J40 IEEE 802.15.4 module",
   "license": "MIT",
